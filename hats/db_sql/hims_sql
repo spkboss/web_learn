@@ -1,0 +1,66 @@
+CREATE TABLE `asset_record` (
+ `srno` int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ `rec_date` date NOT NULL,
+ `aname` varchar(100) NOT NULL,
+ `aserial` varchar(100) NOT NULL,
+ `acode` varchar(100) NOT NULL,
+ `amake` varchar(200) NOT NULL,
+ `asset_des` varchar(10000) NOT NULL,
+ `atype` varchar(10) NOT NULL,
+ `astatus` enum('Ok','Not Ok') CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT 'Ok',
+ `Status` enum('0','1') CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+ALTER TABLE table_name
+  DROP COLUMN quantity_total;
+
+
+CREATE TABLE `users_record` (
+ `id` int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ `udept` varchar(300) NOT NULL,
+ `uname` varchar(100) NOT NULL,
+ `umobile` bigint(10) NOT NULL,
+ `uemail` varchar(200) NOT NULL,
+ `ulocation` varchar(500) NOT NULL,
+ `issued_ats` varchar(100) NOT NULL,
+ `make` varchar(100) NOT NULL,
+ `daterec` date NOT NULL,
+ `udes` varchar(10000) NOT NULL,
+ `status` enum('1','0') CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+
+
+CREATE TABLE `users_record` (
+ `id` int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ `udept` varchar(300) NOT NULL,
+ `uname` varchar(100) NOT NULL,
+ `umobile` bigint(10) NOT NULL,
+ `uemail` varchar(200) NOT NULL,
+ `ulocation` varchar(500) NOT NULL,
+ `udes` varchar(10000) NOT NULL,
+ `issued_ats` varchar(100),
+ `make` varchar(100),
+ `daterec` date,
+ `status` enum('1','0') CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+CREATE TABLE `assign_asset` (
+  `srno` int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `an_rec_date` date NOT NULL,
+  `an_dept` varchar(300) NOT NULL,
+  `an_type` varchar(10) NOT NULL,
+  `an_make` varchar(200) NOT NULL,
+  `an_serial` varchar(100) NOT NULL,
+  `an_name` varchar(100) NOT NULL,
+  `an_mobile` bigint(10) NOT NULL,
+  `an_email` varchar(200) NOT NULL,
+  `an_location` varchar(500) NOT NULL,
+  `an_des` varchar(10000) NOT NULL,
+  `an_rel_des` varchar(10000) DEFAULT 'blank',
+  `an_rel_date` date,
+  `use_status` enum('In Use','Free') CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT 'In Use',
+  `asset_status` enum('1','0') CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+

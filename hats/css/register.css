@@ -1,0 +1,46 @@
+/* CSS Document */
+
+@media only screen and (max-width: 768px) {
+   { width: 100%; }
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll; 
+}
+body {
+  background:$body-bg;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.error {
+  width: 100%; margin: 1.0px auto; padding: 1px; border: 1px solid #f3f2f2; color: #de2925; background:#fdfdfd; border-radius: 5px; text-align: left; }
+.success {color: #3c763d; background: #dff0d8; border: 1px solid #3c763d;margin-bottom: 20px;}
+/* Login CSS Start */
+.full-width {
+  margin-left: calc(-100vw / 2 + 500px / 2);
+  margin-right: calc(-100vw / 2 + 500px / 2);
+}
+
+.totdiv { width: 42%; height:552px; /*background:#f5f2f2;*/  background:#e0f9f48a; box-sizing: border-box; border: 2px solid #fff; border-radius: 4px; padding:2px 2px 12px 2px; top:0; margin-top:5%; margin-left:25%; position:absolute;}
+.hdiv { width: 100%; height: 130px; background:#057dd7e6; border-radius: 4px; text-align:center; font-size:22px; font-family:Imprint MT Shadow, Arial, Helvetica, sans-serif; color: white; text-shadow:2px 2px 5px #000 ;}
+.mdiv { width: 34%; height: 60px; background:#fdfdfd; border-radius: 4px; text-align:right; position: initial; float: left; padding:30px 15px 15px 0px; font-size: 18px;  margin: 1px 0px 1px 0px; }
+.mdiv1 { width: 66%; height: 60px; background:#fdfdfd; border-radius: 4px; float:right; right: 0px; position:relative; padding:18px 5px 15px 5px;  margin: 1px 0px 1px 0px;}
+
+.mdiv1 input {height: 40px; width: 60%; padding: 5px 10px; font-size: 16px; border-radius: 5px; border: 1px solid gray;}
+.mdiv1 select {height: 40px; width: 60%; padding: 5px 10px; font-size: 16px; border-radius: 5px; border: 1px solid gray;}
+
+
+.mdiv_new { width: 40%; height: 30px; background:#fdfdfd; border-radius: 4px; text-align:right; position: initial; float: left; padding:10px 10px 15px 0px; }
+.mdiv1_new { width: 60%; height: 30px; background:#fdfdfd; border-radius: 4px; float:right; right: 	0px; position:relative; padding:5px 5px 15px 5px;}
+
+.btn {padding: 5px 25px; font-size: 20px; text-align: center; cursor: pointer; outline: none; color: #fff; background-color: #142515; border: none; border-radius: 4px; box-shadow: 0 2px #999;}
+.btn:hover {background-color: #3a403a;}
+.btn:active { background-color: #142515; box-shadow: 0 1px #666; transform: translateY(4px);}
+
+.rdiv{ width: 66%; height: 60Px; background: #fdfdfd; border-radius: 4px; font-size:16px; font-family:inherit; right: 0px; position: relative; float: right; padding:25px 10px 0px 0px; margin: 1px 0px 1px 0px;}
+.ldiv { height: 40%; background:#fdfdfd; border-radius: 4px; font-size:16px; font-family:inherit; color: white; position: absolute; float: left; padding:00px 0px 0px 200px; margin-top:630px;}
+
+/* Login CSS End */

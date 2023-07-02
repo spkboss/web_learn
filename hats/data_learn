@@ -1,0 +1,37 @@
+https://www.youtube.com/watch?v=29pVT2UoC6g
+
+
+
+ <?php
+    ini_set('display_errors',1);
+    include_once('data_db.php');
+    $con = dbcon();
+    $sql = "SELECT amake FROM `asset_record`";
+    $result=mysqli_query($con, $sql);
+    ?>
+
+<table cellspacing="0" cellpadding="0"   border="0px solid"  class="table1">
+ <tr>
+   <td>Select User:</label></td> <td colspan="3"><strong>
+ 
+    <select id="name" name="name" onchange="selectUser()"  tabindex="1"><option value="">List of All Users</option>
+  
+    <?php
+       while($rows=mysqli_fetch_array($result))
+    {
+      $n = $rows['amake'];
+      echo '<option  value="'.$n.'">'.$n.'</option>'; 
+
+  }
+  ?>
+  </select>
+  </td>
+  </tr>
+
+
+
+
+  Select use_status
+From assign_asset p
+Left Join asset_record d On ( d.aserial = p.an_serial )
+Where d.aserial Is 3hhhcccc;

@@ -1,0 +1,115 @@
+/*CSS CONTENT*/
+
+/* Main Page Content all css*/
+*{
+  box-sizing: border-box; 
+  }
+
+.error { width: 60%; color: #de2925; margin-left:0px; border: 3px solid #f1f1f1; padding: 0px 0px 0px 346px; }
+.sucesss{ width: 80%; color: #2d9a00; margin-left:10px; text-align: left; }
+.success {color: #3c763d; background: #dff0d8; border: 1px solid #c6ecd0;}
+.hdr_stl{background-image:url(def/T_LINE.png); padding:1px;text-align:center; height: 100px; box-shadow: 2px 0px 20px 14px #b9cdde;}
+.row{padding:6px 0px; height: 85px;}
+P.head1{font-size:1.5vw; margin-top: -2px;}
+#img1 {max-width:25%; height:auto;} 
+#img2 {max-width:34%; height:auto;} 
+#img3 {max-width:80%; height:auto; border-radius: 20px;  box-shadow: 0 8px #e5e5e5;} 
+.newhr {border: 1px solid red; margin-top:0px; }
+.newhr1 {border: 1.5px solid red; margin-top:0px; }
+@media only screen and (max-width:720px) {
+  /* For mobile phones: */
+ .row, .img_left, .title_head, .img_right{ height:120%}
+}
+.img_left { padding:12px; float:left; width:15%; /* The width is 20%, by default */}
+
+.title_head {
+  font-size:2.2pc; color:#0a4a82; padding:18px; float:left; width:68%; /* The width is 60%, by default */ text-decoration: underline; }
+
+.img_right { padding:6px; float:left; width:15%; /* The width is 20%, by default */}
+
+.menu { float:left; width:15%; text-align:center; padding: 1px 10px 0px 10px;}
+#menuid1 {width:255px; height:auto;}
+#menuid2 {width:220px; height:auto; margin: 1px 0px 0px 16px;}  
+.menu a { background-image:url(def/T_LINE.png);
+  padding:8px; margin-top:1px; display:block; width:100%; color:#4789ff; border:1px solid #a4d88b;}
+
+.main { float:left; width:40%; padding:0 1px; text-align:left;}
+
+.main1 {float:left; width:85%; padding:0 1px; text-align:left;}
+.main_err{ float:left; width:85%; padding:0 1px; text-align:left;}
+
+.user_name {float:left; width:15%; text-align:center; padding: 10px  0 0 0;}
+
+.main_time { float:left; width:70%; padding:0 1px; text-align:center; padding: 15px 0 0 0; }
+
+.right { float:left; width:45%; padding:0 1px; text-align:left;	}
+.right_session { float:left; width:15%; padding:0 1px; text-align:center; padding: 10px 0 7px 0px;}
+
+
+table.table1 {border-collapse: collapse; border-spacing: 0; width: 60%; border: 1px solid #ddd; border-radius: 5px;}
+table.table1 th, td {padding: 8px;border-color: #d1e1fd;}
+
+table.table2 { border-spacing: 1px; height: 400px; width: 100%;  border: 1px solid #ddd;  border-collapse: collapse;}
+
+.tbldiv {width: 100%; height: 400PX; overflow: auto; border: 1px solid #ddd;}
+.tbldiv1 {width: 100%; height: 475PX; overflow: auto; border: 1px solid #ddd;}
+
+input[type=text]{ font: 1em sans-serif; height:30px; /* Uniform text field size */ width: 100%; box-sizing: border-box; /* Match form field borders */ border:1px solid #9cd3ed; background-color:#f9fcfd; border-radius: 3px;}
+input[type=hidden] { font: 1em sans-serif; height:30px; /* Uniform text field size */ width: 85%; box-sizing: border-box; /* Match form field borders */ border:1px solid #ebf5ef; background-color:#f9fcfd; border-radius: 3px;}
+input:focus, select:focus {background-color: #fff0f0eb;}
+
+select {height: 30px; width: 45%; padding: 5px 10px; font-size: 16px; border-radius: 5px; border: 1px solid #9cd3ed; font-family: "Lucida Console", "Courier New", monospace; color: #484848; }
+
+input[type=number]{height: 30px; width: 100%; padding: 5px 10px; font-size: 16px; border-radius: 5px; border: 1px solid #9cd3ed;}
+input[type=email]{height: 30px; width: 100%; padding: 5px 10px; font-size: 16px; border-radius: 5px; border: 1px solid #9cd3ed;}
+input[type=date]{height: 30px; width: 45%; padding: 5px 10px; font-size: 16px; border-radius: 5px; border: 1px solid #9cd3ed;}
+
+
+.ttl{display:table-cell; background-color:#41444e; color: white; width:9%; border:1px solid #a4d88b; font-family:Microsoft Sans Serif, Helvetica, sans-serif; font-size:24px;padding: 5px 1px;}
+
+.ttl-1{display:table-cell; background-color:#41444e; color: white; width:25%; border:1px solid; border-color: #a4d88b; }
+.url_hit{text-decoration:none; font-weight: bold; color:blue;}
+.ftr_stl{float:left; width: 100%; background-color:#e5e5e5; color: #7d7d7d; text-align:center;padding:20px;margin-top:5%;}
+#msg {margin: 0px; font-size:16px; width: 100%; height: 125px;  border:1px solid #9cd3ed; border-radius: 3px; resize: none;}
+.btn {  margin-left: .5em; padding: 5px 25px; font-size: 16px; text-align: center; cursor: pointer; outline: none; color: #fff; background-color: #0a4a82; border: none; border-radius: 4px; box-shadow: 0 2px #999;}
+/* This extra margin (margin-left) represent roughly the same space as the space between the labels and their text fields */
+.btn:hover {background-color: #142515;}
+.btn:active {background-color: #142515; box-shadow: 0 1px #666; transform: translateY(1px);}
+
+.btn_del {  margin-left: .5em; padding: 5px 25px; font-size: 16px; text-align: center; cursor: pointer; outline: none; color: #fff; background-color: #880101; border: none; border-radius: 4px; box-shadow: 0 2px #999;}
+.btn_del:hover {background-color: #ff2a25; }
+.btn_edit {  margin-left: .5em; padding: 5px 25px; font-size: 16px; text-align: center; cursor: pointer; outline: none; color: #fff; background-color: #145d00; border: none; border-radius: 4px; box-shadow: 0 2px #999; text-decoration: none !important;}
+.btn_edit:hover {background-color: #00d866;}
+
+.atag_btn { margin-left: .5em; padding: 5px 18px;  font-size: 16px; box-shadow: 0 2px #999; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4); background: #145d00; color: #FFF; border-radius: 4px; text-decoration: none;}
+.atag_btn:hover {background-color: #00d866;}
+
+.formcss {width:100%;}
+ .main_contect_css {
+  float:left;
+  width:70%;
+  padding:0 1px;
+  text-align:center;	
+}
+.contentcss { float:left; margin:5px; background-image:url(def/contctph.jpg); background-size: 100% 110%; width:30%;BORDER-RADIUS: 15px;}
+.transboxcss { margin: 20px; padding:0 2%; opacity: 0.8;filter: alpha(opacity=60); /* For IE8 and earlier */}
+.u_img {margin:-10px 100%;}
+/* Update CSS */
+.upcss { width:50%; float:left; margin: 5px; padding:0 15px; background-color: #ffffff;border: 1px solid #e7ffce; border-radius: 1px; }
+
+.upcss_about { width:100%; float:left; margin: 5px; padding:0 15px; background-color: #ffffff;border: 1px solid #f7f5f5; border-radius: 1px; }
+.updt_msg {padding: 5px 1px; }
+.text-search{text-align: center;}
+.card-header{padding: 20px 110px 0px 0px; margin: 7px; font-size: large;}
+#search-box{width: 45%; padding: 15px; margin: 0px 18px; text-align: center;}
+
+
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+ .menu, .main, .main1, .right, .user_name, .main_time, .right_session, .contentcss, .upcss {
+    width:100%; padding: 0px 0px 0px 0px;
+  }
+}
+
+
